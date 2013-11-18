@@ -4,6 +4,7 @@
  */
 package searcher.trie;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,7 +12,7 @@ import java.util.List;
  * trieノード
  * @author moremagic
  */
-public class TrieNode {    
+public class TrieNode implements Serializable{    
     private char node_label;
     private String value = null;
     private List<TrieNode> chiled = new ArrayList<TrieNode>();

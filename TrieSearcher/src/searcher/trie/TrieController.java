@@ -4,11 +4,13 @@
  */
 package searcher.trie;
 
+import java.io.Serializable;
+
 /**
  * トライ木コントローラ
  * @author moremagic
  */
-public class TrieController {
+public class TrieController implements Serializable{
     //rootノード
     public TrieNode root = new TrieNode((char)-1);
     
